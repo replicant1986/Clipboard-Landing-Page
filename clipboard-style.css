@@ -1,0 +1,644 @@
+
+/*  Variables  */
+:root
+{
+  --cyan: hsl(171, 66%, 44%);
+  --blue: hsl(233, 100%, 69%);
+  --darkblue: hsl(210, 10%, 33%);
+  --grayblue: hsl(201, 11%, 66%);
+}
+
+/*  Reset */
+ul, h1, p, a, li, .container, .bg
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* Base Styles */
+/* re-asign the font-size with each media query */
+
+body
+{
+  background-color: white;
+  overflow-x: hidden;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.ios-button
+{
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 14px 0px;
+  color: white;
+  box-shadow: 1px 2px 3px var(--darkblue);
+  display: inline-block;
+}
+
+.mac-button
+{
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 14px 0px;
+  color: white;
+  box-shadow: 1px 2px 3px var(--darkblue);
+  display: inline-block;
+}
+
+.mac-button:hover
+{
+  background-color: hsla(233, 100%, 69%, 0.5);
+}
+
+.ios-button:hover
+{
+  background-color: hsla(171, 66%, 44%, 0.5);
+}
+
+footer
+{
+  background-color: rgba(159, 171, 178, 10%);
+}
+
+/* Fonts */
+*
+{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1
+{
+  font-weight: 600;
+  color: var(--darkblue);
+  justify-content: center;
+  position: relative;
+
+}
+
+p
+{
+  font-weight: 400;
+  color: var(--grayblue);
+  justify-content: center;
+  position: relative;
+}
+
+a
+{
+  font-weight: 400;
+  color: var(--darkblue);
+  justify-content: center;
+  position: relative;
+}
+
+a:hover
+{
+  color: var(--cyan);
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover
+{
+  fill: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.logo-large
+{
+  position: relative;
+  width: 40%;
+  height: auto;
+  margin-top: 250px;
+  margin-bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-small
+{
+  position: relative;
+  width: 15%;
+  height: auto;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Mobile Styles */
+
+
+
+.container
+{
+  width: auto;
+  height: auto;
+}
+
+.bg
+{
+  background-image: url(./bg-header-mobile.png);
+  background-color: white;
+  background-position: top;
+  width: 100vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.grid
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h1
+{
+  font-size: 2em;
+  grid-area: 1fr;
+  width: 85%;
+  text-align: center;
+  margin-left: 7.5%;
+}
+
+p
+{
+  font-size: 1em;
+  width: 85%;
+  text-align: center;
+  margin-left: 7.5%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+}
+
+ul
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 7.5%;
+  text-align: center;
+  font-size: 1.2em;
+  grid-area: 1fr;
+  width: 85%;
+}
+li
+{
+  margin-bottom: 30px;
+}
+
+.social
+{
+display: grid;
+}
+
+button
+{
+  width: 85%;
+  height: auto;
+  align-items: center;
+  margin-left: 7.5%;
+  font-size: 1em;
+
+}
+
+.ios-button
+{
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.mac-button
+{
+  margin-bottom: 250px;
+}
+
+.computer-image
+{
+  width: 85%;
+  justify-content: center;
+  position: relative;
+  grid-area: 1fr;
+  left: 7.5%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.devices-image
+{
+  width: 85%;
+  justify-content: center;
+  position: relative;
+  grid-area: 1fr;
+  left: 7.5%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.icon
+{
+  width: 12%;
+  justify-content: center;
+  position: relative;
+  grid-area: 1fr;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.google, .ibm, .microsoft, .hp, .vector
+{
+  margin-bottom: 60px;
+  width: 35%;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  grid-area: 1fr;
+  left: 7.5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.appstore
+{
+  margin-top: 120px;
+}
+
+.preview-text
+{
+  margin-bottom: 120px;
+}
+
+.social
+{
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: -10px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 50%;
+  margin-left: 31%;
+}
+
+
+/* Desktop Styles */
+
+
+@media screen and (min-width: 1025px)
+{
+
+  .container
+  {
+    width: auto;
+    height: auto;
+  }
+
+  .bg
+  {
+    background-image: url(./bg-header-desktop.png);
+    background-color: white;
+    background-position: top;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  .grid
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .logo-large
+  {
+    position: relative;
+    width: 10%;
+    height: auto;
+    margin-top: 250px;
+    margin-bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1
+  {
+    font-size: 2em;
+    grid-area: 1fr;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+  }
+
+  p
+  {
+    font-size: 1em;
+    width: 46%;
+    text-align: center;
+    margin-left: 27%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .h1-large
+  {
+  font-size: 2.2em;
+  }
+
+  .p-large
+  {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+
+  .p-computer
+  {
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    text-align: left;
+    width: 55%;
+  }
+
+  .h1-small
+  {
+    font-size: 1.7em;
+    text-align: left;
+    font-weight: 600;
+    width: 60%;
+    margin-bottom: 35px;
+  }
+
+  .h1-tools
+  {
+    font-size: 1.7em;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .h1-tools-preview
+  {
+    font-size: 1.7em;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    width: auto;
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: -10px;
+  }
+
+  .p-tools-blacklist
+  {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+    width: 82%;
+    margin-left: 38px;
+  }
+
+  .p-tools-preview
+  {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 112px;
+    text-align: center;
+    justify-content: center;
+    width: 82%;
+    margin-left: 38px;
+  }
+
+  .p-tools
+  {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    text-align: center;
+    justify-content: center;
+    width: 82%;
+    margin-left: 38px;
+  }
+
+  button
+  {
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+
+  .button-container
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: -100px;
+  }
+
+  .ios-button
+  {
+    margin-top: 40px;
+    margin-bottom: 250px;
+    margin-left: auto;
+    grid-area: 1fr;
+    width: 32%;
+  }
+
+  .mac-button
+  {
+    margin-bottom: 250px;
+    grid-area: 1fr;
+    width: 32%;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .computer-image
+  {
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    grid-area: 1fr;
+    left: -4%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    float: left;
+  }
+
+  .devices-image
+  {
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    grid-area: 1fr;
+    left: 25%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .tools
+  {
+    display: grid;
+    grid-template-areas: "box1 box2 box3";
+    margin-top: 60px;
+  }
+
+  .icon
+  {
+    height: auto;
+    justify-content: center;
+    position: relative;
+    grid-area: 1fr;
+    left: 50%;
+    margin-bottom: 0px;
+    transform: translate(-50%, -50%);
+  }
+
+  .blacklist
+  {
+    grid-area: box1;
+  }
+
+  .plain-text
+  {
+  grid-area: box2;
+  }
+
+ .preview
+ {
+   grid-area: box3;
+ }
+
+  .google, .ibm, .microsoft, .hp, .vector
+  {
+    margin-bottom: 60px;
+    width: 35%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    grid-area: 1fr;
+    left: 7.5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .appstore
+  {
+    margin-top: 120px;
+  }
+
+  .computer-image-section
+  {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  float: right;
+  margin-top: -550px;
+  width: 50%;
+  }
+  .search, .icloud, .access, .blacklist, .plain-text, .preview
+  {
+  grid-area: 1fr;
+  }
+
+  .computer-container
+  {
+  display: inline-block;
+  }
+
+  .company
+  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  }
+
+  footer
+  {
+  display: grid;
+  grid-template-areas: "box1 box2 box3";
+
+  }
+
+  .logo-small
+  {
+  position: relative;
+  width: 16%;
+  height: auto;
+  margin-top: 75px;
+  margin-bottom: 40px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  grid-area: box1;
+  }
+
+  ul
+  {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -7%;
+  text-align: center;
+  font-size: 1.2em;
+  grid-area: box2;
+  width: 85%;
+  }
+  li
+  {
+  margin-bottom: 30px;
+  margin-left: 40px;
+  float: left;
+  }
+
+  .social
+  {
+  align-items: center;
+  display: grid;
+  grid-area: box3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: -10px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 50%;
+  margin-right: 140px;
+  }
+  .facebook, .twitter, .instagram
+  {
+  margin: 0px 15px;
+  }
+
+}
